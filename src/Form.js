@@ -68,7 +68,7 @@ export default class extends React.Component {
     const templateId = 'template_id';
 
     this.sendFeedback(templateId, {
-      message: this.state.feedback,
+      message_html: this.state.feedback,
       from_name: this.state.name,
       reply_to: this.state.email
     });
