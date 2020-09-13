@@ -109,6 +109,9 @@ header nav a:hover {
   color: #000;
   font-family: 'DM Sans', sans-serif;
 }
+#root .MuiTypography-colorPrimary {
+  color: #000;
+}
 #root .mobile-link:visited {
   color: #000;
 }
