@@ -66,26 +66,20 @@ export default class extends React.Component {
 
   handleSubmit() {
     const templateId = 'template_gx9h187';
-
-    this.sendFeedback(templateId, {
+    const serviceId = 'service_nns7oa9';
+    const templateParams = {
       message_html: this.state.feedback,
       from_name: this.state.name,
       reply_to: this.state.email
-    });
-  }
+    };
 
-  sendFeedback(templateId, variables) {
-    window.emailjs
-      .send(templateId, variables)
-      .then(res => {
-        console.log('Email successfully sent!');
-      })
-      // Handle errors here however you like, or use a React error boundary
-      .catch(err =>
-        console.error(
-          'Oh well, you failed. Here some thoughts on the error that occured:',
-          err
-        )
-      );
+    emailjs.send(serviceId, templateId, templateParams).then(
+      function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      function(error) {
+        console.log('FAILED...', error);
+      }
+    );
   }
 }
