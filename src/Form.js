@@ -66,6 +66,7 @@ export default class extends React.Component {
 
   handleSubmit() {
     const templateId = 'template_gx9h187';
+    const serviceId = 'service_nns7oa9';
 
     this.sendFeedback(templateId, {
       message_html: this.state.feedback,
@@ -76,7 +77,7 @@ export default class extends React.Component {
 
   sendFeedback(templateId, variables) {
     window.emailjs
-      .send('gmail', templateId, variables)
+      .send(serviceId, templateId, variables)
       .then(res => {
         console.log('Email successfully sent!');
       })
