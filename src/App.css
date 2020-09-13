@@ -105,11 +105,11 @@ header nav a:hover {
 }
 
 /* Mobile Menu */
-.mobile-link {
-  color: #000 !important;
+#root .mobile-link {
+  color: #000;
   font-family: 'DM Sans', sans-serif;
 }
-.mobile-link:visited {
+#root .mobile-link:visited {
   color: #000;
 }
 
