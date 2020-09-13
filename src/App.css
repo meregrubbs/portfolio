@@ -58,6 +58,7 @@ a {
 }
 .btn--submit {
   font-weight: bold;
+  -webkit-appearance: none;
 }
 #root .MuiButton-outlined:hover,
 .btn--submit:hover {
