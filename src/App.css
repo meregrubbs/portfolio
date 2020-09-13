@@ -1,0 +1,293 @@
+#root {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  font-weight: 300;
+  border-top: #c777da solid 3px;
+  width: 2em;
+  margin-bottom: 1em;
+}
+
+/* Buttons */
+#root .MuiButton-contained {
+  background-color: #c777da;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+#root .MuiButton-contained:hover {
+  background-color: transparent;
+}
+#root .MuiButton-outlined {
+  background-color: transparent;
+  color: white;
+  border-color: #c777da;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3s;
+}
+#root .MuiButton-outlined:hover {
+  background-color: #c777da;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+  position: relative;
+  z-index: 10;
+  padding-left: 1em;
+}
+.logo {
+  max-width: 3em;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  padding: 0.25em 1em;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.1s;
+}
+header nav a:hover {
+  border-top: #c777da solid 0.5em;
+}
+.active {
+  font-weight: bold;
+  color: #c777da;
+}
+
+/* Desktop to Mobile Menu */
+#mobile-nav {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  #mobile-nav {
+    display: block;
+  }
+  #desktop-nav {
+    display: none;
+  }
+}
+
+/* Mobile Menu */
+.mobile-link {
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+}
+.mobile-link:visited {
+  color: #000;
+}
+
+/* Hero */
+#hero {
+  background-image: url(./images/meg_hero.png);
+  position: absolute;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 80vh;
+  z-index: -10;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+.hero-content {
+  padding-left: 1em;
+}
+#hero h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+#hero h2 {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#hero .MuiButton-contained {
+  margin-right: 0.5em;
+}
+
+/* Portfolio */
+#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+}
+.portfolio-item-link {
+  color: transparent;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* Testimonials */
+#testimonials {
+  padding-left: 1em;
+}
+.testimonial-quote {
+  margin: 0;
+}
+.testimonial-title {
+  font-style: italic;
+}
+
+/* About */
+.social-media {
+  display: flex;
+  align-items: center;
+}
+.social-media a {
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: #190a1f;
+  width: 100%;
+  color: white;
+  padding: 3em 0;
+  padding-left: 1em;
+}
+.social-media-icon {
+  transition: all 0.2s;
+}
+.social-media-icon:hover {
+  transform: scale(1.09);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+form label {
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+input,
+textarea {
+  background-color: #f7f0fa;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+input:focus,
+textarea:focus {
+  border: solid 3px #c777da;
+  outline: none;
+}
+form textarea {
+  resize: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1500px) {
+  #hero {
+    background-position: 0 30%;
+  }
+}
+@media screen and (max-width: 630px) {
+  #hero {
+    background-position: 30% 0;
+  }
+  #hero h1 {
+    font-size: 2.5em;
+  }
+  #hero h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .single-testimonial {
+    flex-direction: column;
+  }
+  .testimonial-image {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 450px) {
+  #root .MuiButton-root {
+    padding: 0.5em 1.5em;
+  }
+  #hero {
+    height: 100vh;
+    background-size: cover;
+    margin-top: -20%;
+  }
+  .hero-content {
+    padding-top: 5vh;
+  }
+  #hero h1 {
+    font-size: 1.8em;
+  }
+  #hero h2 {
+    font-size: 1em;
+  }
+  .hero-buttons {
+    flex-direction: column;
+  }
+  #hero .MuiButton-contained {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+  #portfolio {
+    margin-top: 68vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero-content {
+    padding-top: 20vh;
+  }
+  #portfolio {
+    margin-top: 75vh;
+  }
+}
