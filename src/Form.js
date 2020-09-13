@@ -1,85 +1,37 @@
 import React from 'react';
-import { init } from 'emailjs-com';
-init('user_FQvCwBFGhZjkHcWbSevt9');
+import emailjs from 'emailjs-com';
 
-export default class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { feedback: '', name: '', email: '' };
-    this.handleMessageChange = this.handleMessageChange.bind(this);
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+export default function Form() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_nns7oa9',
+        'template_gx9h187',
+        e.target,
+        'user_FQvCwBFGhZjkHcWbSevt9'
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
   }
 
-  render() {
-    return (
-      <form className='test-mailing'>
-        <label htmlFor='name'>Name</label>
-        <input
-          id='name'
-          name='name'
-          type='text'
-          onChange={this.handleNameChange}
-          required
-          value={this.state.name}
-          placeholder='name'
-        />
-        <label htmlFor='email'>Email</label>
-        <input
-          type='email'
-          name='email'
-          id='email'
-          onChange={this.handleEmailChange}
-          required
-          value={this.state.email}
-        />
-        <label htmlFor='message'>Message</label>
-        <textarea
-          id='message'
-          name='message'
-          onChange={this.handleMessageChange}
-          required
-          value={this.state.feedback}
-          style={{ width: '100%', height: '150px' }}
-        />
-
-        <input
-          type='button'
-          value='Submit'
-          className='btn btn--submit'
-          onClick={this.handleSubmit}
-        />
-      </form>
-    );
-  }
-
-  handleMessageChange(event) {
-    this.setState({ feedback: event.target.value });
-  }
-  handleEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-  handleNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  handleSubmit() {
-    const templateId = 'template_gx9h187';
-    const serviceId = 'service_nns7oa9';
-    const templateParams = {
-      message_html: this.state.feedback,
-      from_name: this.state.name,
-      reply_to: this.state.email
-    };
-
-    emailjs.send(serviceId, templateId, templateParams).then(
-      function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-      },
-      function(error) {
-        console.log('FAILED...', error);
-      }
-    );
-  }
+  return (
+    <form className='contact-form' onSubmit={sendEmail}>
+      <input type='hidden' name='contact_number' />
+      <label>Name</label>
+      <input type='text' name='user_name' />
+      <label>Email</label>
+      <input type='email' name='user_email' />
+      <label>Message</label>
+      <textarea name='message' />
+      <input class='btn--submit' type='submit' value='Send' />
+    </form>
+  );
 }
