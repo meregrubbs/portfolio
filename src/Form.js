@@ -68,14 +68,14 @@ export default class extends React.Component {
     const templateId = 'template_gx9h187';
     const serviceId = 'service_nns7oa9';
 
-    this.sendFeedback(templateId, {
+    this.sendFeedback(serviceId, templateId, {
       message_html: this.state.feedback,
       from_name: this.state.name,
       reply_to: this.state.email
     });
   }
 
-  sendFeedback(templateId, variables) {
+  sendFeedback(serviceId, templateId, variables) {
     window.emailjs
       .send(serviceId, templateId, variables)
       .then(res => {
