@@ -38,17 +38,34 @@
     />
 
     <!-- Thumbnail Image -->
-    <meta property="og:title" content="Meredith Grubbs | Web Developer & Designer" />
+    <meta
+      property="og:title"
+      content="Meredith Grubbs | Web Developer & Designer"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Meredith Grubbs is a freelance web designer & developer. She specializes in creating custom websites for individuals and small businesses." />
+    <meta
+      property="og:description"
+      content="Meredith Grubbs is a freelance web designer & developer. She specializes in creating custom websites for individuals and small businesses."
+    />
     <meta property="og:url" content="https://www.meredithgrubbs.com" />
-    <meta property="og:image" content="/thumbnail.png">
+    <meta property="og:image" content="/thumbnail.png" />
 
     <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init('user_FQvCwBFGhZjkHcWbSevt9'); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+      })();
+    </script>
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--

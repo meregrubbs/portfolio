@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Form from '../../Form';
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
       <Button href='mailto:meregrubbs@gmail.com' style={link}>
         meregrubbs@gmail.com
       </Button>
-      <form name='contact' data-netlify='true'>
+      {/* <form name='contact' data-netlify='true'>
         <label htmlFor='name'>Name</label>
         <input id='name' name='name' type='text' />
         <label htmlFor='email'>Email</label>
@@ -23,7 +24,8 @@ const Contact = () => {
         <Button variant='outlined' type='submit'>
           Send
         </Button>
-      </form>
+      </form> */}
+      <Form />
     </div>
   );
 };

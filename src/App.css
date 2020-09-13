@@ -47,16 +47,19 @@ a {
 #root .MuiButton-contained:hover {
   background-color: transparent;
 }
-#root .MuiButton-outlined {
+#root .MuiButton-outlined,
+.btn--submit {
   background-color: transparent;
   color: white;
-  border-color: #c777da;
+  border: #c777da solid 3px;
   font-family: 'DM Sans', sans-serif;
   text-transform: capitalize;
   transition: all 0.3s;
 }
-#root .MuiButton-outlined:hover {
+#root .MuiButton-outlined:hover,
+.btn--submit:hover {
   background-color: #c777da;
+  cursor: pointer;
 }
 
 /* Header */
@@ -236,6 +239,9 @@ textarea:focus {
 }
 form textarea {
   resize: none;
+}
+input::placeholder {
+  color: transparent;
 }
 
 /* Media Queries */
