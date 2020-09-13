@@ -18,7 +18,7 @@ export default class extends React.Component {
           id='name'
           name='name'
           type='text'
-          onChange={this.handleChange}
+          onChange={this.handleNameChange}
           required
           value={this.state.name}
           placeholder='name'
@@ -28,7 +28,7 @@ export default class extends React.Component {
           type='email'
           name='email'
           id='email'
-          onChange={this.handleChange}
+          onChange={this.handleEmailChange}
           required
           value={this.state.email}
         />
@@ -36,7 +36,7 @@ export default class extends React.Component {
         <textarea
           id='message'
           name='message'
-          onChange={this.handleChange}
+          onChange={this.handleMessageChange}
           required
           value={this.state.feedback}
           style={{ width: '100%', height: '150px' }}
@@ -52,8 +52,14 @@ export default class extends React.Component {
     );
   }
 
-  handleChange(event) {
+  handleMessageChange(event) {
     this.setState({ feedback: event.target.value });
+  }
+  handleEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  handleNameChange(event) {
+    this.setState({ name: event.target.value });
   }
 
   handleSubmit() {
