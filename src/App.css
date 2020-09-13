@@ -56,6 +56,9 @@ a {
   text-transform: capitalize;
   transition: all 0.3s;
 }
+.btn--submit {
+  font-weight: bold;
+}
 #root .MuiButton-outlined:hover,
 .btn--submit:hover {
   background-color: #c777da;

@@ -8,7 +8,7 @@ export default function Form() {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const message = document.getElementById('message');
-    const messages = document.querySelector('.messages');
+    const submit = document.getElementById('submit');
 
     if (name.value !== '' && email.value !== '' && message.value !== '') {
       emailjs
@@ -26,15 +26,11 @@ export default function Form() {
             message.value = '';
 
             // sent message
-            const submit = document.getElementById('submit');
-
             submit.value = 'Message Sent!';
-            submit.style.fontWeight = 'bold';
             submit.style.borderColor = 'green';
 
             setTimeout(function() {
               submit.value = 'Send';
-              submit.style.fontWeight = '500';
               submit.style.borderColor = '#c777da';
             }, 3000);
           },
@@ -43,27 +39,18 @@ export default function Form() {
           }
         );
     } else {
-      messages.innerHTML =
-        '<p style="margin: 0;">Please fill in all fields.</p>';
-      messages.style.backgroundColor = 'rgba(247,240,250,1';
-      messages.style.color = 'red';
-      messages.style.marginBottom = '1em';
-      messages.style.padding = '.5em';
-      messages.style.borderRadius = '4px';
-      messages.style.width = '36%';
+      submit.value = 'Please fill in all fields!';
+      submit.style.borderColor = 'red';
 
       setTimeout(function() {
-        messages.innerHTML = '';
-        messages.style.backgroundColor = 'transparent';
-        messages.style.padding = '0';
-        messages.style.margin = '0';
+        submit.value = 'Send';
+        submit.style.borderColor = '#c777da';
       }, 3000);
     }
   }
 
   return (
     <form className='contact-form' onSubmit={sendEmail}>
-      <div className='messages'></div>
       <input type='hidden' name='contact_number' />
       <label>Name</label>
       <input type='text' name='user_name' id='name' />
