@@ -112,6 +112,12 @@ header nav a:hover {
 #root .mobile-link:visited {
   color: #000;
 }
+#root .mobile-link .active {
+  color: #c777da;
+}
+#root .MuiListItem-button:hover {
+  background-color: #f7f0fa;
+}
 
 /* Hero */
 #hero {
