@@ -105,20 +105,20 @@ header nav a:hover {
 }
 
 /* Mobile Menu */
-#root .mobile-link {
+.mobile-link {
   color: #000;
   font-family: 'DM Sans', sans-serif;
 }
-#root .MuiTypography-colorPrimary {
+.MuiTypography-colorPrimary {
   color: #000;
 }
-#root .mobile-link:visited {
+.mobile-link:visited {
   color: #000;
 }
-#root .mobile-link .active {
+.mobile-link .active {
   color: #c777da;
 }
-#root .MuiListItem-button:hover {
+.MuiListItem-button:hover {
   background-color: #f7f0fa;
 }
 
