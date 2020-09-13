@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 
 // Testimonial Images
 import maressa from './testimonialImages/maressa.png';
-import emmie from './testimonialImages/emmie_brown.jpeg';
+// import emmie from './testimonialImages/emmie_brown.jpeg';
 
 const useStyles = makeStyles(theme => ({
   root: {
