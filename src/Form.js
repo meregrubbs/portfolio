@@ -6,7 +6,9 @@ export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = { feedback: '', name: '', email: '' };
-    this.handleChange = this.handleChange.bind(this);
+    this.handleMessageChange = this.handleChange.bind(this);
+    this.handleEmailChange = this.handleChange.bind(this);
+    this.handleNameChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
