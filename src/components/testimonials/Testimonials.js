@@ -5,9 +5,8 @@ import SingleTestimonial from './SingleTestimonial';
 import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 
-// Testimonial Images
+// Testimonial Images (200px width)
 import maressa from './testimonialImages/maressa.png';
-
 
 const useStyles = makeStyles(theme => ({
   root: {
