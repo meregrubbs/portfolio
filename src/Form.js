@@ -76,7 +76,7 @@ export default class extends React.Component {
 
   sendFeedback(templateId, variables) {
     window.emailjs
-      .send('service_nns7oa9', templateId, variables)
+      .send(templateId, variables)
       .then(res => {
         console.log('Email successfully sent!');
       })
