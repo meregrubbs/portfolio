@@ -33,27 +33,52 @@ export default function HamburgerMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link className='mobile-link active' href='#root' underline='none'>
+          <Link
+            className='mobile-link active'
+            href='#root'
+            underline='none'
+            style={{ color: '#c777da' }}
+          >
             Home
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link className='mobile-link' href='#footer' underline='none'>
+          <Link
+            className='mobile-link'
+            href='#footer'
+            underline='none'
+            style={{ color: '#000' }}
+          >
             About
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link className='mobile-link' href='#portfolio' underline='none'>
+          <Link
+            className='mobile-link'
+            href='#portfolio'
+            underline='none'
+            style={{ color: '#000' }}
+          >
             Portfolio
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link className='mobile-link' href='#testimonials' underline='none'>
+          <Link
+            className='mobile-link'
+            href='#testimonials'
+            underline='none'
+            style={{ color: '#000' }}
+          >
             Testimonials
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link className='mobile-link' href='#footer' underline='none'>
+          <Link
+            className='mobile-link'
+            href='#footer'
+            underline='none'
+            style={{ color: '#000' }}
+          >
             Contact
           </Link>
         </MenuItem>

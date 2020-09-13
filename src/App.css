@@ -111,24 +111,6 @@ header nav a:hover {
   }
 }
 
-/* Mobile Menu */
-.mobile-link {
-  color: #000;
-  font-family: 'DM Sans', sans-serif;
-}
-.MuiTypography-colorPrimary {
-  color: #000;
-}
-.mobile-link:visited {
-  color: #000;
-}
-.mobile-link .active {
-  color: #c777da;
-}
-.MuiListItem-button:hover {
-  background-color: #f7f0fa;
-}
-
 /* Hero */
 #hero {
   background-image: url(./images/meg_hero_compressed.png);
