@@ -65,7 +65,7 @@ export default class extends React.Component {
   }
 
   handleSubmit() {
-    const templateId = 'template_id';
+    const templateId = 'template_gx9h187';
 
     this.sendFeedback(templateId, {
       message_html: this.state.feedback,
