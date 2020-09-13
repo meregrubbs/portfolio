@@ -112,7 +112,7 @@ header nav a:hover {
 }
 
 /* Mobile Menu */
-#root .mobile-link {
+.mobile-link {
   color: #000;
   font-family: 'DM Sans', sans-serif;
 }
