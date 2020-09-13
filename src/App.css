@@ -115,7 +115,7 @@ header nav a:hover {
 
 /* Hero */
 #hero {
-  background-image: url(./images/meg_hero.png);
+  background-image: url(./images/meg_hero_compressed.png);
   position: absolute;
   background-position: left;
   background-size: cover;

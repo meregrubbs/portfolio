@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import PortfolioItem from './PortfolioItem';
 import Container from '@material-ui/core/Container';
 
-// Portfolio Thumbnails
+// Portfolio Thumbnails (800px width)
 import maressa from './thumbnails/portfolio_maressa_brown.png';
 import emmie from './thumbnails/portfolio_emmie.png';
 
