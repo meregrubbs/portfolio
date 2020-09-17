@@ -231,7 +231,7 @@ input::placeholder {
 }
 
 /* Media Queries */
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   #hero {
     background-position: 0 30%;
   }
