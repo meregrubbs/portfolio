@@ -171,6 +171,19 @@ header nav a:hover {
 .testimonial-title {
   font-style: italic;
 }
+.single-testimonial {
+  margin-bottom: 2em;
+}
+.maressa {
+  margin: 0 auto;
+  margin-top: -10%;
+  width: 100%;
+  max-height: auto;
+}
+.alice {
+  max-height: 100%;
+  margin-left: -10%;
+}
 
 /* About */
 .social-media {

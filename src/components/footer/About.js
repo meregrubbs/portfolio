@@ -5,7 +5,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const About = () => {
   return (
-    <div style={{ marginRight: '1em', marginBottom: '3em' }}>
+    <div style={{ marginRight: '1em', marginBottom: '2em' }}>
       <h1 className='section-title'>About</h1>
       <p>
         My name is Meredith Grubbs, and I’m a freelance developer & designer

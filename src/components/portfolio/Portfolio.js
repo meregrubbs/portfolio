@@ -7,7 +7,8 @@ import Container from '@material-ui/core/Container';
 
 // Portfolio Thumbnails (800px width)
 import maressa from './thumbnails/portfolio_maressa_brown.png';
-import emmie from './thumbnails/portfolio_emmie.png';
+// import emmie from './thumbnails/portfolio_emmie.png';
+import alice from './thumbnails/portfolio_alice.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -35,7 +36,19 @@ const Portfolio = ({ image, blurb, url }) => {
       <Container maxWidth='md'>
         <h1 className='section-title'>Portfolio</h1>
         <Grid container spacing={3}>
+          {/* Alice */}
           <Grid item sm={6}>
+            <Paper className={classes.paper}>
+              <PortfolioItem
+                image={alice}
+                blurb='Alice is a freelance journalist & content marketing writer. I worked with her to create a complete redesign of her website and logo. Everything is integrated with Wordpress so she can update the website herself.'
+                url='https://alicedubin.com'
+              />
+            </Paper>
+          </Grid>
+
+          {/* Maressa */}
+          <Grid item sm>
             <Paper className={classes.paper}>
               <PortfolioItem
                 image={maressa}
@@ -44,7 +57,9 @@ const Portfolio = ({ image, blurb, url }) => {
               />
             </Paper>
           </Grid>
-          <Grid item sm>
+
+          {/* Emmie */}
+          {/* <Grid item sm>
             <Paper className={classes.paper}>
               <PortfolioItem
                 image={emmie}
@@ -52,7 +67,7 @@ const Portfolio = ({ image, blurb, url }) => {
                 url='http://dremmieb.com/'
               />
             </Paper>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </div>

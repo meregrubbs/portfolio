@@ -15,7 +15,8 @@ class App extends Component {
     url: '',
     testimonialImage: '',
     testimonialQuote: '',
-    testimonialTitle: ''
+    testimonialTitle: '',
+    testimonialClass: ''
   };
 
   render() {
@@ -36,6 +37,7 @@ class App extends Component {
           testimonialImage={this.state.testimonialImage}
           testimonialQuote={this.state.testimonialQuote}
           testimonialTitle={this.state.testimonialTitle}
+          testimonialClass={this.state.testimonialClass}
         />
 
         <Footer />

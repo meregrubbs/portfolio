@@ -3,7 +3,8 @@ import React from 'react';
 const SingleTestimonial = ({
   testimonialImage,
   testimonialQuote,
-  testimonialTitle
+  testimonialTitle,
+  testimonialClass
 }) => {
   return (
     <div className='single-testimonial' style={{ display: 'flex' }}>
@@ -18,17 +19,7 @@ const SingleTestimonial = ({
             marginRight: '2em'
           }}
         >
-          <img
-            src={testimonialImage}
-            alt=''
-            style={{
-              display: 'inline',
-              margin: '0 auto',
-              marginTop: '-10%',
-              width: '100%',
-              maxHeight: 'auto'
-            }}
-          />
+          <img src={testimonialImage} alt='' class={testimonialClass} />
         </div>{' '}
         {/* testimonial image */}
       </div>{' '}
