@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import EmailIcon from '@material-ui/icons/Email';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const About = () => {
   return (
@@ -38,6 +39,17 @@ const About = () => {
           className='social-media-icon'
         >
           <InstagramIcon
+            fontSize='large'
+            style={{ color: 'white', borderColor: 'white' }}
+          />
+        </a>
+        <a
+          href='https://github.com/meregrubbs'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='social-media-icon'
+        >
+          <GitHubIcon
             fontSize='large'
             style={{ color: 'white', borderColor: 'white' }}
           />
