@@ -5,10 +5,10 @@ import Grid from '@material-ui/core/Grid';
 import PortfolioItem from './PortfolioItem';
 import Container from '@material-ui/core/Container';
 
-// Portfolio Thumbnails (800px width)
-import maressa from './thumbnails/portfolio_maressa_brown.png';
-// import emmie from './thumbnails/portfolio_emmie.png';
+// Portfolio Thumbnails (800px width, 620px height)
 import alice from './thumbnails/portfolio_alice.png';
+import maressa from './thumbnails/portfolio_maressa_brown.png';
+import emmie from './thumbnails/portfolio_emmie.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -59,15 +59,15 @@ const Portfolio = ({ image, blurb, url }) => {
           </Grid>
 
           {/* Emmie */}
-          {/* <Grid item sm>
+          <Grid item sm={6}>
             <Paper className={classes.paper}>
               <PortfolioItem
                 image={emmie}
-                blurb='Emaline is a Naturopathic Physician and wanted to a blog to share her knowledge & recipes with others. I created her website & logo from scratch and connected her website to Wordpress.'
+                blurb='Emmie is a Naturopathic Physician and wanted a blog to share her knowledge & recipes with others. I created her website & logo from scratch and connected her website to Wordpress.'
                 url='http://dremmieb.com/'
               />
             </Paper>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
     </div>

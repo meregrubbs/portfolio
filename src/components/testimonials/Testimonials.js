@@ -8,6 +8,7 @@ import Container from '@material-ui/core/Container';
 // Testimonial Images (200px width)
 import maressa from './testimonialImages/maressa.png';
 import alice from './testimonialImages/alice.png';
+import emmie from './testimonialImages/emmie.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -52,6 +53,13 @@ const Testimonials = ({
               testimonialQuote="Meredith Grubbs is an intuitive, creative, and communicative designer who is perpetually taking her skills to the next level and positively fired up to meet her clients' expectations. Working with me to design my first website to promote my work as a journalist and content strategist, Meredith worked diligently to perfect even the most minute details in an effort to ensure that my site fully represented my brand. Her sunny, upbeat, can-do attitude is unparalleled and clearly fueled her ability to deliver a result that was thoroughly in line with my initial vision. Anyone looking to build or refresh their web presence would be beyond fortunate to work with Meredith."
               testimonialTitle='Maressa Brown, Journalist & Content Strategist'
               testimonialClass='maressa'
+            />
+            {/* Emmie */}
+            <SingleTestimonial
+              testimonialImage={emmie}
+              testimonialQuote='It was a pleasure working with Meredith in designing my first website! She is patient and detail-oriented, which helped me feel comfortable expressing my ideas to her while knowing nearly nothing about web design. She has smart ideas to make your website pop and move up in the search ranks. I especially appreciated her creativity and enthusiasm to design my logo from scratch. She even took the time to meet and show me the basics on Wordpress. Meredith offers everything you could ask for with a knack for format and aesthetics. So grateful for my beautiful site, I would choose her again in an instant!'
+              testimonialTitle='Emmie Brown, Naturopathic Doctor'
+              testimonialClass='emmie'
             />
           </Grid>
         </Grid>
