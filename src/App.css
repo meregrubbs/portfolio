@@ -229,6 +229,9 @@ form label {
   color: #fff;
   padding-bottom: 0.5em;
 }
+input {
+  height: 3em;
+}
 input,
 textarea {
   background-color: #f7f0fa;
@@ -246,6 +249,7 @@ textarea:focus {
 }
 form textarea {
   resize: none;
+  height: 8em;
 }
 input::placeholder {
   color: transparent;
