@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     position: 'relative',
-    marginTop: '65vh',
+    marginTop: 'calc(90vh - 6em)',
     paddingTop: '2em',
     paddingBottom: '4em',
     backgroundColor: '#fdf1eb',
