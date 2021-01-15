@@ -156,7 +156,8 @@ header nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 1em;
+  padding: 2em;
+  padding-bottom: 3em;
 }
 .portfolio-item-link {
   color: transparent;
@@ -166,7 +167,7 @@ header nav a:hover {
 
 /* Testimonials */
 #testimonials {
-  padding-left: 1em;
+  padding: 2em;
 }
 .testimonial-quote {
   margin: 0;
